@@ -101,6 +101,10 @@ hr.small {
     transition: all 0.4s ease 0s;
 }
 
+a:hover{
+     text-decoration: none;
+     color: #EC6EBA;
+}
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -238,16 +242,7 @@ hr.small {
 }
 
 .img-portfolio:hover {
-     opacity: 0.8;
-     -webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
-     box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
-}
-
-.img-portfolio {
-     -webkit-box-shadow: 0px 0px 15px 5px #EC6EBA;
-     box-shadow: 0px 0px 15px 5px #EC6EBA;
-     -webkit-transition: all 0.7s ease;
-     transition: all 0.7s ease;
+     opacity: 0.8; 
 }
 
 /* Call to Action */

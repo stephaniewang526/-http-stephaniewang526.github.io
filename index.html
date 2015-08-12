@@ -40,7 +40,6 @@
     <link rel="shortcut icon" href="me.ico">
     <style>
         #map {
-          height:100%;
           overflow:hidden;
           background: #F0F8FF;
         }
@@ -74,6 +73,18 @@
           stroke-width: 1px;
         }
     </style>
+    <script>
+        /*Load content only after background loads*/
+        $(function() {
+            $("#onload").hide();
+            $("#menu-toggle").hide();
+            $('header').ready(function() {
+                //alert('ready');
+                $('#onload').show();
+                $("#menu-toggle").show();
+            });
+        });
+    </script>
 </head>
 
 <body> 
@@ -109,7 +120,7 @@
     <!-- Header -->
     <header id="top" class="header">
         <div class="text-vertical-center">
-             <div class="post1">
+             <div class="post1" id="onload">
                 <h1>It All Begins With Passion</h1>
                 <h3>My Name is Stephanie Qian Wang</h3>
                 <br>
@@ -122,13 +133,12 @@
     <section id="about" class="about">
         <div class="container">
             <div class="row">
-              <span class="col-lg-4">
+              <div class="col-lg-4">
                 <div class="post3">
                     <img src="img/stephanie.jpg" alt="My about photo" width="350"/>
                 </div>
-              </span>
-              
-              <span class="col-lg-8">
+              </div>
+              <div class="col-lg-8">
                   <div class="post4" style="font-size: 16px;">
                       <p>I am a senior majoring in <strong>Information Science</strong> and minoring in
                       <strong>Business</strong> at
@@ -153,7 +163,7 @@
                       <p>I am very passionate about <strong>entrepreneurship</strong> and the <strong>startup community</strong>.
                       I am the <strong>chief curator</strong> in charge of Ithaca area at <a href="http://uvc.org/ecosystem/community-connectors/" target="_blank">Upstate Venture Connect</a>.</p>
                   </div>
-              </span>
+              </div>
             </div>
         </div>
         <!-- /.container -->
@@ -232,14 +242,15 @@
                                     
                                 </div>
                             </div>
-                            
-                            <a href="pdfs/resume_WANG.pdf" class="btn btn-dark" target="_blank">View and Download My PDF Resume</a>
                         </div>
                         <!-- /.row (nested) -->
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
             <!-- /.row -->
+            <div class="row text-center">
+                <a href="pdfs/resume_WANG.pdf" class="btn btn-dark" target="_blank">View and Download My PDF Resume</a>
+            </div>
         </div>
         <!-- /.container -->
     </section>
@@ -365,7 +376,7 @@
                             <div class="post4">
                             <div class="portfolio-item">
                             <h3><a href="pdfs/UpAlarm.pdf" >UpAlarm: Reducing a Sedentary Lifestyle by Encouraging Standing Up and Exercising</a></h3>
-                            <h3>Ubiquitous Computing</h3>
+                            <h3>Android Application - Ubiquitous Computing</h3>
                             </div>
                             </div>
                             
@@ -384,7 +395,8 @@
                         <div class="col-md-6">
                             <div class="post4">
                             <div class="portfolio-item">
-                            <h3>D3 data visualization for you to see how many countries you can travel to with your passport!</h3>
+                            <h3><a href="https://github.com/stephaniewang526/Passport-Power" >D3 data visualization</a></h3>
+                            <h3>See how many countries you can travel to with your passport!</h3>
                             </div>
                             </div>
                             
@@ -417,7 +429,7 @@
     <!-- Map -->
     <div id="map"></div>
 	
-	<script>
+    <script>
         d3.json("cleandata.json", function (error, data){
             var numbers = data;
             
@@ -596,8 +608,8 @@
                 draw(topo);
                 }
         });
-	</script>
-    
+    </script>
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -655,54 +667,54 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
     <script src="js/viewportchecker.js"></script> 
     <script type="text/javascript">
-    jQuery(document).ready(function() {
-            jQuery('.post').addClass("hidden1").viewportChecker({
-                classToAdd: 'visible animated shake',
-                offset: 100    
-               });   
-    });
-    
-    jQuery(document).ready(function() {
-            jQuery('.post1').addClass("hidden1").viewportChecker({
-                classToAdd: 'visible animated fadeInUp',
-                offset: 100    
-               });   
-    });
-    
-    jQuery(document).ready(function() {
-            jQuery('.post2').addClass("hidden1").viewportChecker({
-                classToAdd: 'visible animated flipInX',
-                offset: 100    
-               });   
-    });
-    
-    jQuery(document).ready(function() {
-            jQuery('.post3').addClass("hidden1").viewportChecker({
-                classToAdd: 'visible animated bounceInLeft',
-                offset: 100    
-               });   
-    });
-    
-    jQuery(document).ready(function() {
-            jQuery('.post4').addClass("hidden1").viewportChecker({
-                classToAdd: 'visible animated bounceInRight',
-                offset: 100    
-               });   
-    });
-    
-    jQuery(document).ready(function() {
-            jQuery('.post5').addClass("hidden1").viewportChecker({
-                classToAdd: 'visible animated fadeInLeft',
-                offset: 100    
-               });   
-    });
-    
-    jQuery(document).ready(function() {
-            jQuery('.post6').addClass("hidden1").viewportChecker({
-                classToAdd: 'visible animated rotateIn',
-                offset: 100    
-               });   
-    });
+        jQuery(document).ready(function() {
+                jQuery('.post').addClass("hidden1").viewportChecker({
+                    classToAdd: 'visible animated shake',
+                    offset: 100    
+                   });   
+        });
+        
+        jQuery(document).ready(function() {
+                jQuery('.post1').addClass("hidden1").viewportChecker({
+                    classToAdd: 'visible animated fadeInUp',
+                    offset: 100    
+                   });   
+        });
+        
+        jQuery(document).ready(function() {
+                jQuery('.post2').addClass("hidden1").viewportChecker({
+                    classToAdd: 'visible animated flipInX',
+                    offset: 100    
+                   });   
+        });
+        
+        jQuery(document).ready(function() {
+                jQuery('.post3').addClass("hidden1").viewportChecker({
+                    classToAdd: 'visible animated bounceInLeft',
+                    offset: 100    
+                   });   
+        });
+        
+        jQuery(document).ready(function() {
+                jQuery('.post4').addClass("hidden1").viewportChecker({
+                    classToAdd: 'visible animated bounceInRight',
+                    offset: 100    
+                   });   
+        });
+        
+        jQuery(document).ready(function() {
+                jQuery('.post5').addClass("hidden1").viewportChecker({
+                    classToAdd: 'visible animated fadeInLeft',
+                    offset: 100    
+                   });   
+        });
+        
+        jQuery(document).ready(function() {
+                jQuery('.post6').addClass("hidden1").viewportChecker({
+                    classToAdd: 'visible animated rotateIn',
+                    offset: 100    
+                   });   
+        });
     </script>
     
     <!-- Custom Theme JavaScript -->
@@ -735,16 +747,6 @@
         });
     });
     </script>
-
-    <!-- Google Tag Manager -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-NQJ5XT"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-NQJ5XT');</script>
-    <!-- End Google Tag Manager --> 
 </body>
 
 </html>
