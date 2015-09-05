@@ -1,0 +1,291 @@
+/*!
+ * Start Bootstrap - Modern Business HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Global Styles */
+
+html, body {
+    height: 100%;
+    font-family: 'avenir';
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #fff;
+    color: #666;
+    font-size: 16px;
+}
+
+.breadcrumb{
+    background-color: #02A9AF; /*nav bar teal */
+}
+.breadcrumb>.active{
+    color: #fff; /*dark green*/
+}
+
+.breadcrumb>a{
+    color: #fff;
+}
+
+.breadcrumb a{
+    color: #333;
+}
+
+a{
+    color: #02ACAB;
+}
+a:hover, a:focus { 
+    color: #028482; /*hover green*/
+    text-decoration: none;
+}
+
+.nav-custom{
+    background-color: #02A9AF; /*nav bar teal */
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    
+}
+
+.navbar-inverse {
+  background-color: #1ABC9C;
+  border-color: #16A085;
+}
+
+.navbar-inverse .navbar-brand{
+  color: #FFF;
+  padding: 0 0px;
+  margin: 0px 0 0px 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.navbar-inverse .navbar-brand span{
+  font-size: 16px;
+  float: left;
+  position: absolute;
+  top: 24px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #fff;
+  padding: 18px 15px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: #028482; /*darker teal*/
+}
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #028482;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #028482;
+}
+
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #028482;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #028482;
+  outline: none;
+}
+
+.dropdown-menu{
+  background-color: #00C2C4;
+  border: none;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+
+.dropdown-menu > li > a{
+  color: #fff;
+}
+
+.navbrand:hover,.navbrand:focus{
+    text-decoration:none;
+    color: #007E7D;
+}
+.navbar-inverse .navbar-brand{
+    color: #FFF;
+}
+
+.navbar-brand{
+    margin-left: -5px;
+    text-align: right;
+    font-size: 21.5px;
+}
+
+.carousel-caption{
+    margin-bottom: 8%;
+    padding: 10px;
+}
+
+.btn-carousel{
+    color: #EAF0E6;
+    border: solid #EAF0E6 1px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.btn-carousel:hover{
+    color: #B3C8A7; /* dark green*/
+}
+
+.fill{
+    color: #EAF0E6;
+}
+
+.form-group{
+    padding: 15px;
+    float: left;
+    margin: 50px 0 30px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 400px;
+}
+
+.form-group2{
+    padding: 15px;
+    float: left;
+    margin: 10px 0 30px 0;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 430px;
+}
+
+.panel-default {
+  border-color: #EBEBEB;
+  border: none;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.panel-group .panel {
+  border-radius: 0px;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
+.panel-title {
+  font-size: 14px;
+}
+
+.panel-default > .panel-heading {
+  color: #666;
+  background-color: #F8FAFA;
+}
+
+.page-header{
+    text-align: center;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 60%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.fa-stack{
+    color: #02A9AF;
+}
+i.fa.fa-stack-1x.text-primary{
+    color: #fff;
+}
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.price sup {
+    top: -20px;
+    left: 2px;
+    font-size: 20px;
+}
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+.footer {
+  position: relative;
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  background-color: #02A9AF;
+  color: #fff;
+} 
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img,
+    .img-related {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width:767px) {
+    .img-portfolio {
+        margin-bottom: 15px;
+    }
+
+    header.carousel .carousel {
+        height: 70%;
+    }
+}
