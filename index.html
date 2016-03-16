@@ -6,6 +6,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <script src="http://d3js.org/topojson.v1.min.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
+    <script src="js/viewportchecker.js"></script> 
         
     <!-- Place this tag in your head or just before your close body tag. -->
     <script src="https://apis.google.com/js/platform.js" async defer></script>
@@ -36,55 +45,7 @@
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="me.ico">
-    <style>
-        #map {
-          overflow:hidden;
-          background: #F0F8FF;
-        }
-        .hidden {
-          display: none;
-        }
-        div.tooltip {
-          color: #222;
-          background: #fff;
-          padding: .5em;
-          text-shadow: #f5f5f5 0 1px 0;
-          border-radius: 2px;
-          box-shadow: 0px 0px 2px 0px #a6a6a6;
-          opacity: 0.9;
-          position: absolute;
-        }
-        .country:hover{
-          stroke-width: 2px;
-        }
-        .text{
-          font-size:10px;
-          text-transform:capitalize;
-        }
-        .graticule {
-          stroke: #bbb;
-          stroke-width: .5px;
-          stroke-opacity: .5;
-        }
-        .equator {
-          stroke: #ccc;
-          stroke-width: 1px;
-        }
-    </style>
-    <script>
-        /*Load content only after background loads*/
-        $(function() {
-            $("#onload").hide();
-            $("#menu-toggle").hide();
-            $('header').ready(function() {
-                //alert('ready');
-                $('#onload').show();
-                $("#menu-toggle").show();
-            });
-        });
-    </script>
-    
+    <link rel="shortcut icon" href="me.ico"> 
     <script>
         /*google analytics */
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -319,6 +280,7 @@
                             <div class="post3">
                             <div class="portfolio-item">
                                 <a href="http://www.cipa.cornell.edu">
+                                     <p>Cornell CIPA website database implementation</p>
                                     <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg" alt="website for CHE" >
                                 </a>
                             </div>
@@ -328,34 +290,86 @@
                             <div class="post4">
                             <div class="portfolio-item">
                                 <a href="http://www.ae-society.org/aepcos/index.php">
+                                    <p>AEPCOS Society website fullstack redesign</p>
                                     <img class="img-portfolio img-responsive" src="img/ae.png" alt="website for aepcos-society">
                                 </a>
                             </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
                         <div class="col-md-6">
                             <div class="post3">
                             <div class="portfolio-item">
-                                <a href="http://www.marcgetzoff.me">
-                                    <img class="img-portfolio img-responsive" src="img/marcgetzoff.png" alt="website for marc getzoff">
+                                <a href="https://drive.google.com/file/d/0B9Tx5Z3dXE2TZG1ad25LQ3NIWkE/view?usp=sharing">
+                                    <p>Subscription service iPhone App prototype</p>
+                                    <img class="img-portfolio img-responsive" src="img/subhub.png" alt="subhub" >
                                 </a>
                             </div>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="post4">
+                            <div class="portfolio-item"> 
+                                <a href="https://drive.google.com/file/d/0B9Tx5Z3dXE2TT2FJMTBMaHdsTU0/view?usp=sharing">
+                                    <p>Applewatch App frontend design</p>
+                                    <img class="img-portfolio img-responsive" src="img/applewatch.png" alt="AppleWatchApp">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="post3">                     
+                            <div class="portfolio-item"> 
+                                <a href="https://drive.google.com/file/d/0B9Tx5Z3dXE2TU29zMlBNWDYwalE/view?usp=sharing">
+                                    <p>Mastercard Open API platform conceptual redesign</p>
+                                    <img class="img-portfolio img-responsive" src="img/openapi.png" alt="AppleWatchApp">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="post4">                     
+                            <div class="portfolio-item">
+                                <a href="https://drive.google.com/file/d/0B9Tx5Z3dXE2TOUtqMlV1QXJfQzA/view?usp=sharing">
+                                    <p>Mastercard Masterpass checkout platform prototype</p>
+                                    <img class="img-portfolio img-responsive" src="img/masterpass.png" alt="masterpass">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="post3">
                                 <div class="portfolio-item">
                                     <a href="https://massmosaic.com">
+                                        <p>Mass Mosaic database implementation</p>
                                         <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg" alt="website for massmosaic">
                                     </a>
                                 </div> 
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="post3">
+                            <div class="post4">
                             <div class="portfolio-item">
                                 <a href="http://ingeniusprep.cn/">
+                                    <p>Ingeniusprep Chinese website implementation</p>
                                     <img class="img-portfolio img-responsive" src="img/ingenius.png" alt="website for ingenius prep">
+                                </a>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="post3">
+                            <div class="portfolio-item">
+                                <a href="http://www.marcgetzoff.me">
+                                    <p>Marc Getzoff personal website fullstack implementation</p>
+                                    <img class="img-portfolio img-responsive" src="img/marcgetzoff.png" alt="website for marc getzoff">
                                 </a>
                             </div>
                             </div>
@@ -364,14 +378,14 @@
                             <div class="post4">
                             <div class="portfolio-item">
                                 <a href="http://obrien-stonemasonry.com">
-                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg" alt="website for obrien stone masonry">
+                                    <p>David O'brien small business website fullstack implementation</p>
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.png" alt="website for obrien stone masonry">
                                 </a>
                             </div>
                             </div>
                         </div>
                     </div>
                     <!-- /.row (nested) -->
-                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -403,8 +417,7 @@
                             <h3><a href="pdfs/UpAlarm.pdf" >UpAlarm: Reducing a Sedentary Lifestyle by Encouraging Standing Up and Exercising</a></h3>
                             <h3>Android Application - Ubiquitous Computing</h3>
                             </div>
-                            </div>
-                            
+                            </div>  
                         </div>
                     </div>
                     <div class="row">
@@ -423,17 +436,13 @@
                             <h3><a href="https://github.com/stephaniewang526/Passport-Power" >D3 data visualization</a></h3>
                             <h3>See how many countries you can travel to with your passport!</h3>
                             </div>
-                            </div>
-                            
+                            </div>   
                         </div>
                     </div>
+                    <a target="blank" href="https://github.com/stephaniewang526" class="btn btn-dark">See More on GitHub</a>
                 </div>
-                    <!-- /.row (nested) -->
-                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
             </div>
-                <!-- /.col-lg-10 -->
         </div>
-        <!-- /.container -->
     </section>
 
     <!-- Call to Action-->
@@ -453,187 +462,6 @@
     
     <!-- Map -->
     <div id="map"></div>
-	
-    <script>
-        d3.json("cleandata.json", function (error, data){
-            var numbers = data;
-            
-	    var width = document.getElementById('map').offsetWidth;
-            var height = width / 2;
-	    
-            var projection,path,svg,g;
-            var graticule = d3.geo.graticule();
-            var tooltip = d3.select("#map").append("div").attr("class", "tooltip hidden");
-            var mapfillcolor = "#CCC";
-            var mapstrokecolor = "#FFF";
-            
-	    setup(width,height);
-
-            function setup(width,height){
-                projection = d3.geo.mercator()
-                  .translate([0, 0])
-                  .scale(width / 2 / Math.PI);
-    
-                path = d3.geo.path()
-                    .projection(projection);
-    
-                svg = d3.select("#map").append("svg")
-                    .attr("width", width)
-                    .attr("height", height)
-                    .append("g")
-                    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-    
-                g = svg.append("g");
-            }
-	    
-            function getCountryname(code) {
-                for (var i = 0; i < numbers.length; i++){
-                  if (numbers[i].iso3_digit_code == code){
-                    return numbers[i].country_name;
-                  }
-
-            }
-                return "Unknown";
-            }
-
-	    var worldData;
-	    
-	    d3.json("world-topo.json", function(error, world) {
-		worldData = world;
-		
-		// Use topojson to create an array containing one object per country.
-		var countries = topojson.feature(world, world.objects.countries).features;
-                topo = countries;
-                draw(topo);
-                
-                // Ithaca
-		var ithacaCoords = projection([-76, 42]);
-		
-		svg.append("circle")
-		.attr("cx", ithacaCoords[0])
-		.attr("cy", ithacaCoords[1])
-		.attr("r", 5)
-		.attr("fill", "red");
-		
-		svg.append("text")
-		.attr("x", ithacaCoords[0] + 10)
-		.attr("y", ithacaCoords[1])
-		.text("Ithaca")
-		.attr("fill", "red")
-		
-		// Beijing
-		var beijingCoords = projection([116, 40]);
-		
-		svg.append("circle")
-		.attr("cx", beijingCoords[0])
-		.attr("cy", beijingCoords[1])
-		.attr("r", 5)
-		.attr("fill", "#6B9362");
-		
-		svg.append("text")
-		.attr("x", beijingCoords[0] + 10)
-		.attr("y", beijingCoords[1])
-		.text("Beijing")
-		.attr("fill", "#6B9362");
-		
-		// Singapore
-		var singaporeCoords = projection([104, 1.3]);
-		
-		svg.append("circle")
-		.attr("cx", singaporeCoords[0])
-		.attr("cy", singaporeCoords[1])
-		.attr("r", 5)
-		.attr("fill", "#6B9362");
-		
-		svg.append("text")
-		.attr("x", singaporeCoords[0] + 10)
-		.attr("y", singaporeCoords[1])
-		.text("Singapore")
-		.attr("fill", "#6B9362");
-                
-                // St. Louis
-		var stlouisCoords = projection([-90, 38.6]);
-		
-		svg.append("circle")
-		.attr("cx", stlouisCoords[0])
-		.attr("cy", stlouisCoords[1])
-		.attr("r", 5)
-		.attr("fill", "#6B9362");
-		
-		svg.append("text")
-		.attr("x", stlouisCoords[0] + 10)
-		.attr("y", stlouisCoords[1])
-		.text("St. Louis")
-		.attr("fill", "#6B9362");
-            });
-                
-                var colorCountry = function (de, topo){
-
-                d3.json("cleandata.json", function (error1, data1){
-                    var selectedCountry = g.selectAll(".country").data(topo);
-
-                    selectedCountry.style("fill", function (d) {
-                        if (d.id == de.id){
-                          return "#F3F315";
-                        }
-                        return mapfillcolor;
-                        });
-
-                     });
-                 };
-                
-                function draw(topo) {
-                svg.append("path")
-                .datum(graticule)
-                .attr("class", "graticule")
-                .attr("d", path);
-    
-                g.append("path")
-                .datum({type: "LineString", coordinates: [[-180, 0], [-90, 0], [0, 0], [90, 0], [180, 0]]})
-                .attr("class", "equator")
-                .attr("d", path);
-    
-    
-                var country = g.selectAll(".country").data(topo);
-    
-                country.enter().insert("path")
-                    .attr("class", "country")
-                    .attr("d", path)
-                    .style("fill", function (d) {return mapfillcolor})
-                    .style("stroke", mapstrokecolor);
-    
-                    //ofsets plus width/height of transform, plsu 20 px of padding, plus 20 extra for tooltip offset off mouse
-                    var offsetL = document.getElementById('map').offsetLeft+(width/2)+40;
-                    var offsetT =document.getElementById('map').offsetTop+(height/2)+20;
-    
-                    //tooltips
-                    country
-                      .on("mouseover", function(d,i) {
-                        var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
-                          tooltip
-                            .classed("hidden", false)
-                            .attr("style", "left:"+(mouse[0]+offsetL)+"px;top:"+(mouse[1]+offsetT)+"px")
-                            .html(getCountryname(d.id))
-                        })
-                        .on("mouseout", function(d,i) {
-                          tooltip.classed("hidden", true)
-                        });
-                    country
-                        .on("click", function(d,i) {
-                          var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
-                          colorCountry(d, topo);
-                        });
-                }
-    
-                function redraw() {
-                width = document.getElementById('map').offsetWidth-60;
-                height = width / 2;
-                d3.select('svg').remove();
-                setup(width,height);
-                draw(topo);
-                }
-        });
-    </script>
 
     <!-- Footer -->
     <footer>
@@ -663,14 +491,6 @@
                                 <div class="post6"><i class="fa fa-linkedin fa-fw fa-3x"></i></div>
                             </a>
                         </li>
-                        
-                        <!--
-                        <li>
-                            <a href="https://plus.google.com/u/1/">
-                                <div class="post6"><i class="fa fa-google-plus fa-fw fa-3x"></i></div>
-                            </a>
-                        </li>
-                        -->
                     </ul>
                     
                     <hr class="small">
@@ -683,97 +503,6 @@
             </div>
         </div>
     </footer>
- 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    
-    
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> 
-    <script src="js/viewportchecker.js"></script> 
-    <script type="text/javascript">
-        jQuery(document).ready(function() {
-                jQuery('.post').addClass("hidden1").viewportChecker({
-                    classToAdd: 'visible animated shake',
-                    offset: 100    
-                   });   
-        });
-        
-        jQuery(document).ready(function() {
-                jQuery('.post1').addClass("hidden1").viewportChecker({
-                    classToAdd: 'visible animated fadeInUp',
-                    offset: 100    
-                   });   
-        });
-        
-        jQuery(document).ready(function() {
-                jQuery('.post2').addClass("hidden1").viewportChecker({
-                    classToAdd: 'visible animated flipInX',
-                    offset: 100    
-                   });   
-        });
-        
-        jQuery(document).ready(function() {
-                jQuery('.post3').addClass("hidden1").viewportChecker({
-                    classToAdd: 'visible animated bounceInLeft',
-                    offset: 100    
-                   });   
-        });
-        
-        jQuery(document).ready(function() {
-                jQuery('.post4').addClass("hidden1").viewportChecker({
-                    classToAdd: 'visible animated bounceInRight',
-                    offset: 100    
-                   });   
-        });
-        
-        jQuery(document).ready(function() {
-                jQuery('.post5').addClass("hidden1").viewportChecker({
-                    classToAdd: 'visible animated fadeInLeft',
-                    offset: 100    
-                   });   
-        });
-        
-        jQuery(document).ready(function() {
-                jQuery('.post6').addClass("hidden1").viewportChecker({
-                    classToAdd: 'visible animated rotateIn',
-                    offset: 100    
-                   });   
-        });
-    </script>
-    
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
 </body>
 
 </html>
