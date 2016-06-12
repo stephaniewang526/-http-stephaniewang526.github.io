@@ -1,0 +1,24 @@
+[
+  {
+			"country_name": "India",
+      "lat": 20.0000,
+      "long":77.0000,
+      "iso3_digit_code": "IN",
+      "gdp_percapita" : 100,
+      "incoming": 3000,
+      "outgoing": 5000,
+      "connections": ["China"]
+
+		},
+		{
+			"country_name": "China",
+      "lat": 35.0000,
+      "long":105.0000,
+      "iso3_digit_code": "CN",
+      "gdp_percapita": 100,
+      "incoming": 3000,
+      "outgoing": 5000,
+      "connections": ["India"]
+		}
+
+	]
