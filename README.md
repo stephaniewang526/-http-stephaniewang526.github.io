@@ -1,1 +1,0 @@
-Stephanie Wang's Portfolio.
