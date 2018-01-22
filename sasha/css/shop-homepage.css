@@ -17,13 +17,15 @@ h6 {
 .bg-dark {
   background-color: #4EBBFF !important;
 }
-.main_right {
-  margin-top: 1.5rem;
-}
 
 .list-group-item {
   padding: .25rem .1rem;
   border: none;
+}
+
+.title {
+  color: #4EBBFF;
+  margin-top: 6rem;
 }
 
 @media (min-width: 992px) {
