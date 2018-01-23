@@ -24,7 +24,7 @@ h6 {
 }
 
 .md-2{
-  width: auto;
+  width: auto !important;
 }
 
 .title {
