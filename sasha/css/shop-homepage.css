@@ -23,6 +23,10 @@ h6 {
   border: none;
 }
 
+.md-2{
+  width: auto;
+}
+
 .title {
   color: #4EBBFF;
   margin-top: 6rem;
