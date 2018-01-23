@@ -18,6 +18,10 @@ h6 {
   background-color: #4EBBFF !important;
 }
 
+.list-group {
+  margin-top: 1.5rem;
+}
+
 .list-group-item {
   padding: .25rem .1rem;
   border: none;
@@ -29,7 +33,7 @@ h6 {
 
 .title {
   color: #4EBBFF;
-  margin-top: 6rem;
+  margin-top: 1.5rem;
 }
 
 @media (min-width: 992px) {
