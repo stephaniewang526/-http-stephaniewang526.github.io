@@ -18,8 +18,8 @@ h6 {
   background-color: #4EBBFF !important;
 }
 
-.list-group {
-  margin-top: 2.75rem;
+.navbar-static-top {
+  margin-top: 2.5rem;
 }
 
 .list-group-item {
@@ -33,7 +33,7 @@ h6 {
 
 .title {
   color: #4EBBFF;
-  margin-top: 1.5rem;
+  margin-top: 1.75rem;
 }
 
 @media (min-width: 992px) {
