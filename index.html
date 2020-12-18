@@ -65,11 +65,8 @@
           <div class="subheading mb-5">145 E 15th St · New York, NY 10003 ·
             <a href="mailto:stephanieqianwang@gmail.com">stephanieqianwang@gmail.com</a>
           </div>
-          <p class="mb-5">I am experienced in web development and programming. I use iterative approach to provide clients
-            with strategies and solutions.<br/><br/>
-            Please <a href="mailto:stephanieqianwang@gmail.com">email me</a> directly with your website needs.
-            I build websites from scratch (with hosting and domain name services if needed),
-            maintain websites, and provide clients with insights on how to improve their current websites.
+          <p class="mb-5">Currently writing code to improve developer experience at Google Cloud.<br/><br/>
+            Please <a href="mailto:stephanieqianwang@gmail.com">email me</a> with any questions or inquiries.
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
               <a target="_blank" href="https://www.linkedin.com/in/stephanieqianwang/">
@@ -91,19 +88,84 @@
         </div>
       </section>
 
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
+        <div class="my-auto">
+          <h2 class="mb-5">Talks</h2>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://youtu.be/RaheLr_aVg8" target="_blank">Debugging and troubleshooting Kubernetes</a></h3>
+              <div class="subheading mb-3">GDG Devfest, Kaoshiung, Taiwan</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Oct 2020</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://devnexus.com/speakers/2579" target="_blank">Core Java/ Dependency Management</a></h3>
+              <div class="subheading mb-3">DevNexus, Atlanta, USA</div>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">Feb 2021 (video to be posted)</span>
+            </div>
+          </div>
+
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0"><a href="https://programm.javaland.eu/2021/#/scheduledEvent/606363" target="_blank">Taming dependencies conflicts for 70 Google Cloud Java client libraries</a></h3>
+              <div class="subheading mb-3">JavaLand, Germany</div>
+
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">March 2021 (video to be posted)</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Experience</h2>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
-              <h3 class="mb-0">Developer Programs Engineer</h3>
+              <h3 class="mb-0">Developer Relations Engineer (Java)</h3>
               <div class="subheading mb-3">Google | New York, NY</div>
               <ul>
-                <li>Owner of the Google Cloud Platform BigQuery Java client libraries -- responsible for maintaining and implementing new feature in the clients.</li>
-                <li>Work cross-product to improved Maven dependency management across all Java client libraires in Google Cloud Platform by implementing Google Cloud Shared Dependencies BOM (Bill of Materials) and the Maven Flatten Plugin.</li>
-                <li>Work cross-team to improve Google Cloud Platform open source Java clients' CI performance by implementing Github Actions across 78 Java repos.</li>
-                <li>Contribute to Maven Flatten Plugin open source repository.</li>
+                <li>Owner of the Google Cloud Platform BigQuery Java client libraries (SDKs) -- responsible for maintaining and implementing new features to continuously improve developer experience.
+                  Some work done are:
+                  <ul>
+                    <li><a href="https://github.com/googleapis/java-bigquery/pull/509" target="_blank">implement fast query path</a>;</li>
+                    <li><a href="https://github.com/googleapis/java-bigquery/pull/776" target="_blank">add connectionId support for external data sources</a>;</li>
+                    <li><a href="https://github.com/googleapis/java-bigquery/pull/737" target="_blank">add support for additional time partitioning intervals</a>;</li>
+                    <li><a href="https://github.com/googleapis/java-bigquery/pull/703" target="_blank">add BIGNUMERIC support</a>;</li>
+                    <li><a href="https://github.com/googleapis/java-bigquery/pull/732" target="_blank">fix to throw jobexception for invalid multiple statements query</a>.</li>
+                  </ul>
+                </li>
+                <li>Work cross-product and with customers (Spotify, Niantic) to improve dependency management across 80+ googleapis Java client libraires.
+                  <ul>
+                    <li>Proposed and led the effort to implement the <a href="https://github.com/googleapis/java-shared-dependencies" target="_blank">Google Cloud Shared Dependencies</a> and the <a href="https://github.com/mojohaus/flatten-maven-plugin" target="_blank">Maven Flatten Plugin</a> in all the googleapis Java repos.</li>
+                  </ul>
+                </li>
+                <li>Work cross-team to improve googleapis Github repos CI/CD performance.
+                  <ul>
+                    <li>Proposed and migrated 78 googleapis Java repos from running Kokoro to <a href="https://github.com/googleapis/synthtool/tree/master/synthtool/gcp/templates/java_library/.github/workflows" target="_blank>">Github Actions</a>.
+                      The team continues to develop more Github Actions workflows after the migration.</li>
+                    <li>Proposed and implemented <a href="https://github.com/googleapis/synthtool/commits/master/synthtool/gcp/templates/java_library/.github/workflows/auto-release.yaml" target="_blank">autorelease Github Action workflow</a> for all eligible googleapis Java client libraries. Client library releases are now 90%+ automated.</li>
+                  </ul>
+                </li>
+                <li>Contribute to the Apache Maven Flatten Plugin open source project.
+                  <ul><li>Past contributions include a <a href="https://github.com/mojohaus/flatten-maven-plugin/pull/134" target="_blank">fix</a> that was deployed across all the googleapis Java client libraries which helped eliminate loss of transitive dependency problem by flattening all the published pom files.</li></ul>
+                </li>
+                <li>Promote diversity and inclusion. Support hiring efforts.
+                  <ul>
+                    <li>Hosted two Software Engineer interns as their manager. Both received and accepted FTE offers at the end of their internships.</li>
+                    <li>Budget lead of Women@, one of the largest employee-formed organizations at Google.</li>
+                  </ul>
+                </li>
               </ul>
             </div>
             <div class="resume-date text-md-right">
@@ -116,7 +178,7 @@
               <h3 class="mb-0">Software Engineer</h3>
               <div class="subheading mb-3">Morgan Stanley | New York, NY</div>
               <ul>
-                <li>Lead a team of ten engineers(based in NY/ LN/ Bangalore) and contribute as a UI engineer to develop a dynamic bond issuance application(built in Angular/ Java/ Sybase).
+                <li>Lead a team of ten engineers (based in NY/ LN/ Bangalore) and contribute as a UI engineer to develop a dynamic bond issuance application(built in Angular/ Java/ Sybase).
                 </li>
                 <li>The application is now used by over 500 users globally and it supports live updates (MQ listener/ Lightstreamer) from all users. The complex entitlement model architected permissions users securely based on their role, relationship, and location.
                 </li>
@@ -242,19 +304,18 @@
           <div class="subheading mb-3">Programming Languages &amp; Tools</div>
           <ul class="list-inline list-icons">
             <li class="list-inline-item">
-              <i class="devicon-html5-plain-wordmark"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="devicon-css3-plain-wordmark"></i>
+              <i class="devicon-java-plain-wordmark"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicon-javascript-plain"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-jquery-plain-wordmark"></i>
+              <i class="devicon-html5-plain-wordmark"></i>
             </li>
             <li class="list-inline-item">
-              <i class="devicon-java-plain-wordmark"></i>
+              <i class="devicon-css3-plain-wordmark"></i>
+            <li class="list-inline-item">
+              <i class="devicon-jquery-plain-wordmark"></i>
             </li>
             <li class="list-inline-item">
               <i class="devicon-python-plain-wordmark"></i>
